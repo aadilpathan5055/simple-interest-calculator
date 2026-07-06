@@ -17,25 +17,26 @@ def calculate():
 root = tk.Tk()
 root.title("Simple Interest Calculator")
 root.geometry("400x350")
-root.configure(bg="#d9f2ff")
+root.configure(bg="#f2f2f2")
 
 title = tk.Label(root,
                  text="Simple Interest Calculator",
                  font=("Arial",16,"bold"),
-                 bg="#d9f2ff")
+                 bg="#f2f2f2",
+                 fg="#333333")
 title.pack(pady=10)
 
-tk.Label(root,text="Principal",bg="#d9f2ff").pack()
+tk.Label(root,text="Principal",bg="#f2f2f2", fg="#333333").pack()
 
 principal = tk.Entry(root)
 principal.pack()
 
-tk.Label(root,text="Rate (%)",bg="#d9f2ff").pack()
+tk.Label(root,text="Rate (%)",bg="#f2f2f2", fg="#333333").pack()
 
 rate = tk.Entry(root)
 rate.pack()
 
-tk.Label(root,text="Time (Years)",bg="#d9f2ff").pack()
+tk.Label(root,text="Time (Years)",bg="#f2f2f2", fg="#333333").pack()
 
 time = tk.Entry(root)
 time.pack()
@@ -43,13 +44,14 @@ time.pack()
 tk.Button(root,
           text="Calculate",
           command=calculate,
-          bg="blue",
+          bg="#4CAF50",
           fg="white").pack(pady=15)
 
 result = tk.Label(root,
                   text="",
                   font=("Arial",14),
-                  bg="#d9f2ff")
+                  bg="#f2f2f2",
+                  fg="#333333")
 
 result.pack()
 
